@@ -19,7 +19,7 @@ export default function Home() {
         }}
       >
         <div style={{ fontWeight: 700, letterSpacing: "0.08em" }}>
-          ALTiora
+          ALTIORA
         </div>
         <nav style={{ display: "flex", gap: "16px", fontSize: "14px" }}>
           <a href="#servicios" style={{ textDecoration: "none", color: "#e5e7eb" }}>
