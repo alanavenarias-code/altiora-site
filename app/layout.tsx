@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Altiora COnsultoría",
+  title: "Altiora Consultoría",
   description: "Inteligencia territorial y electoral para Candidatos y Gobiernos",
 };
 
