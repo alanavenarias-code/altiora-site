@@ -62,6 +62,19 @@ export default function Home() {
           <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
             En Altiora nos dedicamos a posicionar personajes y narrativas en territorio. Microsegmentamos y medimos el mapa electoral con un sistema de herramientas propias hecho para decidir dónde y cómo conviene aparecer.
           </p>
+          <div style={{ marginTop: "16px" }}>
+            <a
+              href="#enfoque"
+              style={{
+                fontSize: "14px",
+                textDecoration: "none",
+                color: "#e5e7eb",
+                opacity: 0.9,
+              }}
+            >
+              Ver cómo trabajamos ↓
+            </a>
+          </div>
         </div>
       </section>
 
