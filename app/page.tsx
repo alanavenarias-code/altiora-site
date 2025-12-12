@@ -94,7 +94,7 @@ export default function Home() {
             marginBottom: "8px",
             display: "grid",
             gap: "4px",
-            paddingLeft: "20px",
+            paddingLeft: "0px",
           }}
         >
           <li>Mucha información, pero poca claridad sobre dónde concentrar esfuerzos.</li>
@@ -144,7 +144,15 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Nuestro enfoque de trabajo</h2>
-        <ol style={{ display: "grid", gap: "12px", fontSize: "15px", paddingLeft: "20px" }}>
+        <ol
+          style={{
+            display: "grid",
+            gap: "12px",
+            fontSize: "15px",
+            paddingLeft: 0,
+            listStyle: "none",
+          }}
+        >
           <li>
             <strong>Escuchar y entender.</strong>{" "}
             Partimos de escuchar al equipo y al territorio: datos, mapas y calle. Nuestras herramientas de análisis geográfico,
