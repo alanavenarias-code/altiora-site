@@ -13,8 +13,8 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Altiora Consultoría",
-  description: "Inteligencia territorial y electoral para Candidatos y Gobiernos",
+  title: "Altiora Consultoría – Estrategia política desde el territorio",
+  description: "Estrategia territorial basada en microsegmentación y medición del mapa político para posicionar personajes y narrativas en tierra.",
 };
 
 export default function RootLayout({
@@ -23,7 +23,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
