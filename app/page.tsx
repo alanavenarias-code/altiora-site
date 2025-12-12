@@ -57,8 +57,7 @@ export default function Home() {
             Convertimos datos dispersos en decisiones claras para campañas, gobiernos y poderes públicos.
           </p>
           <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
-            No vendemos mapas ni bots. Diseñamos diagnósticos y rutas de acción para que cada peso, cada brigada
-            y cada minuto de una campaña se coloque donde realmente mueve votos y legitimidad.
+            En Altiora buscamos que cada recurso invertido en territorio —presupuesto, tiempo y estructura— se traduzca en votos, legitimidad y confianza, no en desgaste.
           </p>
 
           <div style={{ marginTop: "24px", display: "flex", gap: "12px" }}>
