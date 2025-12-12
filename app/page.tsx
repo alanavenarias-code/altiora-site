@@ -209,7 +209,7 @@ export default function Home() {
           fontSize: "15px",
         }}
       >
-        <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Solicitar una conversación inicial</h2>
+        <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Hagamos equipo</h2>
         <p>
           Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
         </p>
