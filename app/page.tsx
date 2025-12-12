@@ -129,11 +129,14 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Para quién funciona</h2>
+        <p style={{ fontSize: "15px", marginBottom: "8px" }}>
+          Altiora está pensada para equipos que toman decisiones políticas desde el territorio:
+        </p>
         <ul style={{ display: "grid", gap: "8px", fontSize: "15px" }}>
-          <li>Campañas electorales que necesitan priorizar territorio y estructura.</li>
-          <li>Gobiernos locales que quieren decidir dónde concentrar programas.</li>
-          <li>Poderes judiciales y órganos autónomos que buscan construir legitimidad.</li>
-          <li>ONG y colectivos que trabajan incidencia en territorio.</li>
+          <li>Campañas electorales.</li>
+          <li>Gobiernos locales.</li>
+          <li>Poder Judicial y órganos autónomos.</li>
+          <li>ONG y colectivos.</li>
         </ul>
       </section>
 
@@ -148,15 +151,8 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Solicitar una conversación inicial</h2>
-        <p style={{ marginBottom: "8px" }}>
-          Agenda una llamada breve para revisar tu mapa electoral o de gobierno y ver si Kharta tiene sentido para tu proyecto.
-        </p>
         <p>
-          Puedes escribirnos a{" "}
-          <a href="mailto:contacto@altioraconsultoria.lat" style={{ color: "#38bdf8" }}>
-            contacto@altioraconsultoria.lat
-          </a>{" "}
-          o compartir tu contacto por el canal que prefieras.
+          Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
         </p>
       </section>
     </main>
