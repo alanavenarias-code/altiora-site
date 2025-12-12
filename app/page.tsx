@@ -62,36 +62,6 @@ export default function Home() {
           <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
             En Altiora nos dedicamos a posicionar personajes y narrativas en territorio. Microsegmentamos y medimos el mapa electoral con un sistema de herramientas propias hecho para decidir dónde y cómo conviene aparecer.
           </p>
-
-          <div style={{ marginTop: "24px", display: "flex", gap: "12px" }}>
-            <a
-              href="#contacto"
-              style={{
-                padding: "10px 18px",
-                borderRadius: "999px",
-                backgroundColor: "#22c55e",
-                color: "#022c22",
-                fontWeight: 600,
-                textDecoration: "none",
-                fontSize: "14px",
-              }}
-            >
-              Solicitar demo
-            </a>
-            <a
-              href="#servicios"
-              style={{
-                padding: "10px 18px",
-                borderRadius: "999px",
-                border: "1px solid #475569",
-                textDecoration: "none",
-                fontSize: "14px",
-                color: "#e5e7eb",
-              }}
-            >
-              Ver qué hacemos
-            </a>
-          </div>
         </div>
       </section>
 
@@ -202,11 +172,19 @@ export default function Home() {
         <p style={{ fontSize: "15px", marginBottom: "8px" }}>
           Altiora está pensada para equipos que toman decisiones políticas desde el territorio:
         </p>
-        <ul style={{ display: "grid", gap: "8px", fontSize: "15px" }}>
-          <li>Campañas electorales.</li>
-          <li>Gobiernos locales.</li>
-          <li>Poder Judicial y órganos autónomos.</li>
-          <li>ONG y colectivos.</li>
+        <ul style={{ display: "grid", gap: "8px", fontSize: "16px" }}>
+          <li>
+            <strong>Campañas electorales.</strong>
+          </li>
+          <li>
+            <strong>Gobiernos locales.</strong>
+          </li>
+          <li>
+            <strong>Poder Judicial y órganos autónomos.</strong>
+          </li>
+          <li>
+            <strong>ONG y colectivos.</strong>
+          </li>
         </ul>
       </section>
 
@@ -224,24 +202,6 @@ export default function Home() {
         <p style={{ marginBottom: "12px" }}>
           Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
         </p>
-        <div
-          style={{
-            display: "flex",
-            flexWrap: "wrap",
-            gap: "12px",
-            alignItems: "center",
-          }}
-        >
-          <a
-            href="mailto:contacto@altioraconsultoria.lat"
-            style={{ fontSize: "14px", color: "#38bdf8", textDecoration: "none" }}
-          >
-            contacto@altioraconsultoria.lat
-          </a>
-          <span style={{ fontSize: "13px", opacity: 0.8 }}>
-            o comparte tu contacto por el canal que prefieras.
-          </span>
-        </div>
       </section>
     </main>
   );
