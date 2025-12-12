@@ -59,6 +59,9 @@ export default function Home() {
           <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
             En Altiora buscamos que cada recurso invertido en territorio —presupuesto, tiempo y estructura— se traduzca en votos, legitimidad y confianza, no en desgaste.
           </p>
+          <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
+            En Altiora nos dedicamos a posicionar personajes y narrativas en territorio. Microsegmentamos y medimos el mapa electoral con un sistema de herramientas propias hecho para decidir dónde y cómo conviene aparecer.
+          </p>
 
           <div style={{ marginTop: "24px", display: "flex", gap: "12px" }}>
             <a
@@ -93,6 +96,24 @@ export default function Home() {
       </section>
 
       <section
+        id="contexto"
+        style={{
+          maxWidth: "960px",
+          margin: "0 auto",
+          padding: "0 16px 32px",
+          fontSize: "15px",
+        }}
+      >
+        <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Por qué hace falta Altiora</h2>
+        <p style={{ marginBottom: "8px" }}>
+          Hoy las campañas y gobiernos se enfrentan a mucha información, pero poca claridad sobre dónde concentrar esfuerzos; equipos saturados que trabajan a ciegas; herramientas tecnológicas sueltas que nadie integra en una estrategia coherente; y dificultad para medir en tiempo real qué funciona y qué no en el territorio.
+        </p>
+        <p>
+          Altiora existe para traducir datos, mapas y canales digitales en un plan territorial con prioridades claras y un sistema de seguimiento que se puede explicar en una sola conversación.
+        </p>
+      </section>
+
+      <section
         id="servicios"
         style={{
           maxWidth: "960px",
@@ -118,6 +139,44 @@ export default function Home() {
             <strong>Canales digitales: bots de WhatsApp y atención ciudadana.</strong> Registro, afiliación, encuestas rápidas y atención ciudadana.
           </li>
         </ul>
+      </section>
+
+      <section
+        id="enfoque"
+        style={{
+          maxWidth: "960px",
+          margin: "0 auto",
+          padding: "16px 16px 32px",
+        }}
+      >
+        <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Nuestro enfoque de trabajo</h2>
+        <ol style={{ display: "grid", gap: "12px", fontSize: "15px", paddingLeft: "20px" }}>
+          <li>
+            <strong>Escuchar y entender.</strong>{" "}
+            Partimos de escuchar al equipo y al territorio: datos, mapas y calle. Nuestras herramientas de análisis geográfico,
+            electoral y digital nos permiten ver cómo está colocado el personaje y qué temas están vivos en cada zona.
+          </li>
+          <li>
+            <strong>Diagnóstico del territorio.</strong>{" "}
+            Con esa escucha construimos un diagnóstico claro: dónde hay potencial, dónde hay riesgo, qué universos de voto existen
+            y qué temas conectan con cada segmento.
+          </li>
+          <li>
+            <strong>Estrategia y paquetes de acción.</strong>{" "}
+            A partir del diagnóstico definimos qué hacer, dónde, con qué mensajes y en qué orden, para que el personaje no sólo
+            aparezca, sino que quede asociado a las temáticas que le conviene encarnar.
+          </li>
+          <li>
+            <strong>Implementación con herramientas propias.</strong>{" "}
+            Bajamos la estrategia a tierra con mapas de priorización, rutas territoriales, canales digitales (WhatsApp), encuestas
+            y push poll, alineando presencia, mensajes y estructura.
+          </li>
+          <li>
+            <strong>Acompañamiento y ajustes.</strong>{" "}
+            Medimos cómo responde el territorio, qué temas prenden y dónde hay resistencia, y ajustamos rutas, mensajes y focos de
+            inversión. La estrategia se corrige según lo que de verdad pasa en tierra.
+          </li>
+        </ol>
       </section>
 
       <section
