@@ -29,7 +29,7 @@ export default function Home() {
             Casos de uso
           </a>
           <a href="#contacto" style={{ textDecoration: "none", color: "#e5e7eb" }}>
-            Solicitar demo
+            Hagamos equipo
           </a>
         </nav>
       </header>
@@ -51,12 +51,12 @@ export default function Home() {
               marginBottom: "16px",
             }}
           >
-            Kharta – Inteligencia del territorio político
+            Altiora Consultoría – Estrategia política desde el territorio
           </h1>
           <p style={{ fontSize: "16px", maxWidth: "640px", marginBottom: "24px" }}>
             Convertimos datos dispersos en decisiones claras para campañas, gobiernos y poderes públicos.
           </p>
-          <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
+          <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9, marginBottom: "8px" }}>
             En Altiora buscamos que cada recurso invertido en territorio —presupuesto, tiempo y estructura— se traduzca en votos, legitimidad y confianza, no en desgaste.
           </p>
           <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
@@ -105,9 +105,20 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Por qué hace falta Altiora</h2>
-        <p style={{ marginBottom: "8px" }}>
-          Hoy las campañas y gobiernos se enfrentan a mucha información, pero poca claridad sobre dónde concentrar esfuerzos; equipos saturados que trabajan a ciegas; herramientas tecnológicas sueltas que nadie integra en una estrategia coherente; y dificultad para medir en tiempo real qué funciona y qué no en el territorio.
-        </p>
+        <ul
+          style={{
+            fontSize: "15px",
+            marginBottom: "8px",
+            display: "grid",
+            gap: "4px",
+            paddingLeft: "20px",
+          }}
+        >
+          <li>Mucha información, pero poca claridad sobre dónde concentrar esfuerzos.</li>
+          <li>Equipos saturados que trabajan prácticamente a ciegas.</li>
+          <li>Herramientas tecnológicas sueltas, sin una estrategia coherente que las integre.</li>
+          <li>Dificultad para medir en tiempo real qué funciona y qué no en el territorio.</li>
+        </ul>
         <p>
           Altiora existe para traducir datos, mapas y canales digitales en un plan territorial con prioridades claras y un sistema de seguimiento que se puede explicar en una sola conversación.
         </p>
@@ -210,9 +221,27 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Hagamos equipo</h2>
-        <p>
+        <p style={{ marginBottom: "12px" }}>
           Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
         </p>
+        <div
+          style={{
+            display: "flex",
+            flexWrap: "wrap",
+            gap: "12px",
+            alignItems: "center",
+          }}
+        >
+          <a
+            href="mailto:contacto@altioraconsultoria.lat"
+            style={{ fontSize: "14px", color: "#38bdf8", textDecoration: "none" }}
+          >
+            contacto@altioraconsultoria.lat
+          </a>
+          <span style={{ fontSize: "13px", opacity: 0.8 }}>
+            o comparte tu contacto por el canal que prefieras.
+          </span>
+        </div>
       </section>
     </main>
   );
