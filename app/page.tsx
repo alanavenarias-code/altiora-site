@@ -103,20 +103,19 @@ export default function Home() {
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Qué hacemos</h2>
         <ul style={{ display: "grid", gap: "12px", fontSize: "15px" }}>
           <li>
-            <strong>Diagnóstico territorial y electoral.</strong> Mapas de rentabilidad, escenarios de voto y
-            prioridades por sección, colonia o municipio.
-          </li>
-          <li>
             <strong>Estrategia territorial y rutas de trabajo.</strong> Dónde ganar, dónde defender y dónde no vale la pena invertir.
           </li>
           <li>
-            <strong>Kharta Maps.</strong> Mapas y dashboards interactivos para simular escenarios y decidir en minutos.
+            <strong>Diagnóstico territorial y electoral.</strong> Mapas de rentabilidad, escenarios de voto y prioridades por sección, colonia o municipio.
           </li>
           <li>
-            <strong>Canales digitales y bots de WhatsApp.</strong> Registro, afiliación, encuestas rápidas y atención ciudadana.
+            <strong>Mapas de incidencia política y dashboards para toma prudente de decisiones.</strong> Mapas y dashboards interactivos para simular escenarios y tomar decisiones prudentes en minutos.
           </li>
           <li>
-            <strong>Termómetros y encuestas.</strong> Lecturas rápidas del clima político y temas sensibles por zona.
+            <strong>Encuestas, push poll de posicionamiento y termómetro del territorio.</strong> Lecturas rápidas del clima político, el posicionamiento de personajes y los temas sensibles por zona.
+          </li>
+          <li>
+            <strong>Canales digitales: bots de WhatsApp y atención ciudadana.</strong> Registro, afiliación, encuestas rápidas y atención ciudadana.
           </li>
         </ul>
       </section>
