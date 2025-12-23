@@ -1,4 +1,10 @@
 export default function Home() {
+  const sectionStyle = {
+    maxWidth: "960px",
+    margin: "0 auto",
+    padding: "16px 16px 32px",
+  } as const;
+
   return (
     <main
       style={{
@@ -36,8 +42,7 @@ export default function Home() {
 
       <section
         style={{
-          maxWidth: "960px",
-          margin: "0 auto",
+          ...sectionStyle,
           padding: "32px 16px 48px",
           display: "grid",
           gap: "32px",
@@ -53,36 +58,49 @@ export default function Home() {
           >
             Altiora Consultoría – Estrategia política desde el territorio
           </h1>
-          <p style={{ fontSize: "16px", maxWidth: "640px", marginBottom: "24px" }}>
-            Convertimos datos dispersos en decisiones claras para campañas, gobiernos y poderes públicos.
-          </p>
-          <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9, marginBottom: "8px" }}>
-            En Altiora buscamos que cada recurso invertido en territorio —presupuesto, tiempo y estructura— se traduzca en votos, legitimidad y confianza, no en desgaste.
-          </p>
-          <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9 }}>
-            En Altiora nos dedicamos a posicionar personajes y narrativas en territorio. Microsegmentamos y medimos el mapa electoral con un sistema de herramientas propias hecho para decidir dónde y cómo conviene aparecer.
-          </p>
-          <div style={{ marginTop: "16px" }}>
-            <a
-              href="#enfoque"
-              style={{
-                fontSize: "14px",
-                textDecoration: "none",
-                color: "#e5e7eb",
-                opacity: 0.9,
-              }}
-            >
-              Ver cómo trabajamos ↓
-            </a>
+            <p style={{ fontSize: "16px", maxWidth: "640px", marginBottom: "24px" }}>
+              Convertimos datos dispersos en decisiones claras para campañas, gobiernos y poderes públicos.
+            </p>
+            <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9, marginBottom: "8px" }}>
+              Cada recurso invertido en territorio —presupuesto, tiempo y estructura— debe traducirse en votos, legitimidad y confianza, no en desgaste.
+            </p>
+            <p style={{ fontSize: "15px", maxWidth: "640px", opacity: 0.9, marginBottom: "8px" }}>
+              Microsegmentamos y medimos el mapa electoral con un sistema de herramientas propias para decidir dónde y cómo conviene aparecer, y con qué narrativa.
+            </p>
+            <div style={{ marginTop: "16px", display: "flex", gap: "12px", alignItems: "center" }}>
+              <a
+                href="#enfoque"
+                style={{
+                  fontSize: "14px",
+                  textDecoration: "none",
+                  color: "#e5e7eb",
+                  opacity: 0.9,
+                }}
+              >
+                Ver cómo trabajamos ↓
+              </a>
+              <a
+                href="#contacto"
+                style={{
+                  fontSize: "14px",
+                  textDecoration: "none",
+                  color: "#020617",
+                  backgroundColor: "#e5e7eb",
+                  padding: "10px 14px",
+                  borderRadius: "999px",
+                  fontWeight: 600,
+                }}
+              >
+                Agenda una llamada
+              </a>
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       <section
         id="contexto"
         style={{
-          maxWidth: "960px",
-          margin: "0 auto",
+          ...sectionStyle,
           padding: "0 16px 32px",
           fontSize: "15px",
         }}
@@ -109,11 +127,7 @@ export default function Home() {
 
       <section
         id="servicios"
-        style={{
-          maxWidth: "960px",
-          margin: "0 auto",
-          padding: "16px 16px 32px",
-        }}
+        style={sectionStyle}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Qué hacemos</h2>
         <ul style={{ display: "grid", gap: "12px", fontSize: "15px" }}>
@@ -137,11 +151,7 @@ export default function Home() {
 
       <section
         id="enfoque"
-        style={{
-          maxWidth: "960px",
-          margin: "0 auto",
-          padding: "16px 16px 32px",
-        }}
+        style={sectionStyle}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Nuestro enfoque de trabajo</h2>
         <ol
@@ -183,11 +193,7 @@ export default function Home() {
 
       <section
         id="casos"
-        style={{
-          maxWidth: "960px",
-          margin: "0 auto",
-          padding: "16px 16px 32px",
-        }}
+        style={sectionStyle}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Para quién funciona</h2>
         <p style={{ fontSize: "15px", marginBottom: "8px" }}>
@@ -212,8 +218,7 @@ export default function Home() {
       <section
         id="contacto"
         style={{
-          maxWidth: "960px",
-          margin: "0 auto",
+          ...sectionStyle,
           padding: "16px 16px 48px",
           borderTop: "1px solid #1e293b",
           fontSize: "15px",
@@ -223,6 +228,24 @@ export default function Home() {
         <p style={{ marginBottom: "12px" }}>
           Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
         </p>
+        <div style={{ display: "flex", flexWrap: "wrap", gap: "12px", alignItems: "center" }}>
+          <a
+            href="mailto:hola@altiora.mx"
+            style={{
+              textDecoration: "none",
+              color: "#020617",
+              backgroundColor: "#e5e7eb",
+              padding: "12px 16px",
+              borderRadius: "8px",
+              fontWeight: 600,
+            }}
+          >
+            Escríbenos a hola@altiora.mx
+          </a>
+          <span style={{ opacity: 0.85 }}>
+            Respondemos en menos de 24 horas con una propuesta de ruta de trabajo.
+          </span>
+        </div>
       </section>
     </main>
   );
