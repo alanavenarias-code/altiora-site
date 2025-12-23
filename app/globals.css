@@ -1,4 +1,3 @@
-
 :root {
   --bg: #020617;
   --panel: #071226;
@@ -18,6 +17,19 @@
 }
 
 * { box-sizing: border-box; }
+
+/* Better UX defaults */
+html { scroll-behavior: smooth; }
+
+/* Keep anchor jumps from hiding under the header */
+[id] { scroll-margin-top: 96px; }
+
+/* Accessible focus */
+:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.55);
+  outline-offset: 3px;
+  border-radius: 8px;
+}
 
 html, body {
   padding: 0;
@@ -48,6 +60,16 @@ a { color: inherit; }
   align-items: center;
   justify-content: space-between;
   gap: 18px;
+  border-bottom: 1px solid rgba(30, 41, 59, 0.6);
+}
+
+/* Optional: make header sticky by adding this class in markup later */
+.headerSticky {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background: rgba(2, 6, 23, 0.72);
+  backdrop-filter: blur(10px);
 }
 
 .brand {
@@ -67,6 +89,13 @@ a { color: inherit; }
 .navLink {
   text-decoration: none;
   opacity: 0.92;
+  padding: 6px 8px;
+  border-radius: 10px;
+}
+
+.navLink:focus-visible {
+  outline: 2px solid rgba(56, 189, 248, 0.55);
+  outline-offset: 2px;
 }
 
 .navLink:hover {
@@ -111,18 +140,40 @@ a { color: inherit; }
 
 /* Sections */
 .section {
-  padding-top: 10px;
-  padding-bottom: 34px;
+  padding-top: 20px;
+  padding-bottom: 44px;
 }
 
 .hero {
-  padding-top: 26px;
-  padding-bottom: 38px;
+  padding-top: 34px;
+  padding-bottom: 44px;
 }
 
 .heroInner {
   display: grid;
-  gap: 10px;
+  gap: 12px;
+  max-width: 860px;
+}
+
+/* Optional two-column hero layout (activate later by adding these classNames) */
+.heroSplit {
+  display: grid;
+  gap: 22px;
+  align-items: start;
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 900px) {
+  .heroSplit { grid-template-columns: 1.15fr 0.85fr; }
+}
+
+.heroPanel {
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background: rgba(7, 18, 38, 0.35);
+  box-shadow: var(--shadow);
+  padding: 16px;
+  min-height: 220px;
 }
 
 /* Accent chip/link */
@@ -161,6 +212,12 @@ a { color: inherit; }
   border-radius: var(--radius-lg);
   padding: 18px;
   box-shadow: var(--shadow);
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.card:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.22);
 }
 
 .cardGrid {
@@ -220,19 +277,16 @@ a { color: inherit; }
   border: 1px solid var(--border);
   border-radius: var(--radius-md);
   background: rgba(7, 18, 38, 0.35);
+  transition: transform 160ms ease, border-color 160ms ease;
 }
 
-.stepNum {
-  font-weight: 800;
-  letter-spacing: 0.06em;
-  font-size: 13px;
-  color: rgba(56, 189, 248, 0.85);
+.step:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.18);
 }
 
-.stepBody p {
-  margin: 0;
-  color: var(--muted);
-  font-size: 15px;
+@media (max-width: 420px) {
+  .step { grid-template-columns: 44px 1fr; }
 }
 
 /* Audience chips */
@@ -253,6 +307,12 @@ a { color: inherit; }
   padding: 12px 14px;
   font-size: 16px;
   font-weight: 700;
+  transition: transform 160ms ease, border-color 160ms ease;
+}
+
+.pill:hover {
+  transform: translateY(-1px);
+  border-color: rgba(56, 189, 248, 0.18);
 }
 
 /* CTA + Footer */
@@ -277,3 +337,20 @@ a { color: inherit; }
 @media (max-width: 520px) {
   .h1 { font-size: 30px; }
 }
+
+/* Utilities */
+.srOnly {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+.stack { display: grid; gap: 12px; }
+.stack16 { display: grid; gap: 16px; }
+.measure { max-width: 720px; }
