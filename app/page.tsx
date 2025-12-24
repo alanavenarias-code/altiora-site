@@ -4,8 +4,8 @@ export default function Home() {
     <main
       style={{
         minHeight: "100vh",
-        backgroundColor: "#020617",
-        color: "#e5e7eb",
+        backgroundColor: "var(--bg)",
+        color: "var(--text)",
         fontFamily: "system-ui, -apple-system, BlinkMacSystemFont, sans-serif",
       }}
     >
@@ -23,13 +23,13 @@ export default function Home() {
           ALTIORA
         </div>
         <nav style={{ display: "flex", gap: "16px", fontSize: "14px" }}>
-          <a href="#servicios" style={{ textDecoration: "none", color: "#e5e7eb" }}>
+          <a href="#servicios" style={{ textDecoration: "none", color: "var(--text)" }}>
             Servicios
           </a>
-          <a href="#casos" style={{ textDecoration: "none", color: "#e5e7eb" }}>
+          <a href="#casos" style={{ textDecoration: "none", color: "var(--text)" }}>
             Casos de uso
           </a>
-          <a href="#contacto" style={{ textDecoration: "none", color: "#e5e7eb" }}>
+          <a href="#contacto" style={{ textDecoration: "none", color: "var(--text)" }}>
             Hagamos equipo
           </a>
         </nav>
@@ -79,7 +79,7 @@ export default function Home() {
                 style={{
                   fontSize: "14px",
                   textDecoration: "none",
-                  color: "#e5e7eb",
+                  color: "var(--link)",
                   opacity: 0.9,
                 }}
               >
@@ -91,10 +91,10 @@ export default function Home() {
           {/* Columna 2: panel visual (nuevo, sin borrar nada) */}
           <aside
             style={{
-              border: "1px solid #1e293b",
+              border: "1px solid var(--border)",
               borderRadius: "16px",
               padding: "16px",
-              background: "rgba(7, 18, 38, 0.35)",
+              background: "var(--panel2)",
               display: "grid",
               gap: "12px",
             }}
@@ -103,7 +103,7 @@ export default function Home() {
             <div style={{ fontSize: "13px", letterSpacing: "0.06em", opacity: 0.9 }}>
               EJEMPLO DE ENTREGABLES
             </div>
-            <div className="card" style={{ background: "rgba(7, 18, 38, 0.35)", boxShadow: "none" }}>
+            <div className="card" style={{ background: "var(--panel)", border: "1px solid var(--border)", boxShadow: "none" }}>
               <p className="p muted" style={{ marginBottom: "10px" }}>
                 Aquí va una captura de un mapa, un dashboard o una muestra de una ruta territorial.
               </p>
@@ -141,7 +141,7 @@ export default function Home() {
         <div
           className="card"
           style={{
-            background: "rgba(7, 18, 38, 0.35)",
+            background: "var(--panel2)",
             boxShadow: "none",
             display: "flex",
             flexWrap: "wrap",
@@ -436,7 +436,7 @@ export default function Home() {
         }}
       >
         <h2 style={{ fontSize: "22px", marginBottom: "12px" }}>Preguntas frecuentes</h2>
-        <div className="card" style={{ background: "rgba(7, 18, 38, 0.35)", boxShadow: "none" }}>
+        <div className="card" style={{ background: "var(--panel)", border: "1px solid var(--border)", boxShadow: "none" }}>
           <div style={{ display: "grid", gap: "10px" }}>
             <details>
               <summary style={{ cursor: "pointer", fontWeight: 700 }}>¿Qué insumos necesitan para empezar?</summary>
@@ -479,11 +479,11 @@ export default function Home() {
           maxWidth: "960px",
           margin: "0 auto",
           padding: "16px 16px 48px",
-          borderTop: "1px solid #1e293b",
+          borderTop: "1px solid var(--border)",
           fontSize: "15px",
         }}
       >
-        <div className="card" style={{ background: "rgba(7, 18, 38, 0.35)", boxShadow: "none" }}>
+        <div className="card" style={{ background: "var(--panel)", border: "1px solid var(--border)", boxShadow: "none" }}>
           <h2 style={{ fontSize: "20px", marginBottom: "8px" }}>Hagamos equipo</h2>
           <p style={{ marginBottom: "12px" }}>
             Si quieres que el trabajo que ya haces en territorio se traduzca en posiciones más firmes, este es un buen momento para empezar a trabajarlo en equipo.
@@ -499,9 +499,10 @@ export default function Home() {
                 justifyContent: "center",
                 padding: "10px 14px",
                 borderRadius: "12px",
-                border: "1px solid #1e293b",
+                border: "1px solid var(--border)",
+                background: "var(--panel)",
                 textDecoration: "none",
-                color: "#e5e7eb",
+                color: "var(--text)",
                 fontSize: "14px",
                 fontWeight: 700,
               }}
@@ -516,9 +517,10 @@ export default function Home() {
                 justifyContent: "center",
                 padding: "10px 14px",
                 borderRadius: "12px",
-                border: "1px solid #1e293b",
+                border: "1px solid var(--border)",
+                background: "var(--panel)",
                 textDecoration: "none",
-                color: "#e5e7eb",
+                color: "var(--text)",
                 fontSize: "14px",
                 opacity: 0.92,
               }}
@@ -532,6 +534,28 @@ export default function Home() {
           </p>
         </div>
       </section>
+      <style jsx global>{`
+        :root{
+          --bg: #F5F2EC;
+          --panel: #FFFFFF;
+          --panel2: #F0EEE8;
+          --border: #D7D2C8;
+
+          --text: #14181F;
+          --muted: #5E6A78;
+
+          --link: #2F6F7A;
+          --linkHover: #255A63;
+        }
+
+        html, body { background: var(--bg); color: var(--text); }
+        a { color: var(--link); }
+        a:hover { color: var(--linkHover); }
+
+        /* Ensure existing utility classes align with the matte palette */
+        .muted { color: var(--muted) !important; }
+        .card { box-shadow: none !important; }
+      `}</style>
     </main>
   );
 }
